@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.myapplication.game.game1_2"
+    android:weightSum="1">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/answer1"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_toLeftOf="@+id/putText1"
+            android:layout_toStartOf="@+id/putText1"
+            android:padding="10dp"
+            android:layout_alignTop="@+id/putText1"
+            android:hint="정답을 입력하세요"/>
+
+        <Button
+            android:text="입력"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/putText1" />
+
+        <TextView
+            android:text="다음 도형의 변의 갯수는 몇 개 일까요?"
+            android:layout_width="wrap_content"
+            android:id="@+id/textView2"
+            android:textSize="18sp"
+            android:padding="10dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:text="점수 : 0"
+            android:layout_width="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/score_text"
+            android:layout_height="50dp"
+            android:textSize="18sp"
+            android:padding="10dp" />
+
+        <TextView
+            android:text="남은 시간 : 60초"
+            android:layout_height="wrap_content"
+            android:id="@+id/count_text"
+            android:padding="10dp"
+            android:textSize="18sp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignBottom="@+id/score_text"
+            android:layout_width="160dp"
+            />
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            app:srcCompat="@android:color/background_light"
+            android:id="@+id/img"
+            android:layout_marginTop="36dp"
+            android:layout_alignTop="@+id/stage_text"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/stage_text"
+            android:layout_above="@+id/answer1"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:textSize="40sp"
+            android:gravity="center"
+            android:textStyle="normal|bold"
+            android:textColor="@android:color/holo_red_dark"
+            android:layout_below="@+id/textView2" />
+
+
+    </RelativeLayout>
+</LinearLayout>

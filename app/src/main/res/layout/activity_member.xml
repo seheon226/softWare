@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_member"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.myapplication.member">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/main"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/imageView5"
+        android:layout_alignParentTop="true" />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:inputType="textPersonName"
+        android:hint="아이디"
+        android:ems="10"
+        android:id="@+id/editText"
+        android:layout_marginTop="68dp"
+        android:textStyle="normal|bold"
+        android:textSize="25sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:inputType="textPassword"
+        android:hint="비밀번호"
+        android:ems="10"
+        android:id="@+id/editText2"
+        android:textSize="25sp"
+        android:textStyle="normal|bold"
+        android:layout_below="@+id/editText"
+        android:layout_alignLeft="@+id/editText"
+        android:layout_alignStart="@+id/editText"
+        android:layout_marginTop="31dp" />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:inputType="textPassword"
+        android:hint="비밀번호 확인"
+        android:ems="10"
+        android:id="@+id/editText3"
+        android:textSize="25sp"
+        android:textStyle="normal|bold"
+        android:layout_marginTop="35dp"
+        android:layout_below="@+id/editText2"
+        android:layout_alignLeft="@+id/editText2"
+        android:layout_alignStart="@+id/editText2" />
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:id="@+id/button38"
+        android:onClick="onButton1Clicked"
+        android:background="@drawable/button2"
+        android:text="회 원 가 입"
+        android:textStyle="normal|bold"
+        android:textSize="40sp"
+        android:layout_marginTop="53dp"
+        android:layout_below="@+id/editText3"
+        android:layout_alignLeft="@+id/editText3"
+        android:layout_alignStart="@+id/editText3" />
+
+</RelativeLayout>

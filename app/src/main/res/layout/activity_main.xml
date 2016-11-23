@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.myapplication.MainActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/dhdh"
+        android:id="@+id/imageView"
+        android:layout_alignParentTop="true" />
+
+    <Button
+        android:text="회 원 가 입"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:textSize="40sp"
+        android:id="@+id/button6"
+        android:background="@drawable/button2"
+        android:textStyle="normal|bold"
+        android:onClick="onButton2Clicked"
+        android:layout_below="@+id/button"
+        android:layout_alignLeft="@+id/button"
+        android:layout_alignStart="@+id/button"
+        android:layout_marginTop="22dp" />
+
+    <Button
+        android:text="종 료 하 기"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:textSize="40sp"
+        android:id="@+id/button2"
+        android:background="@drawable/button2"
+        android:textStyle="normal|bold"
+        android:onClick="onButton3Clicked"
+        android:layout_marginTop="24dp"
+        android:layout_below="@+id/button6"
+        android:layout_alignLeft="@+id/button6"
+        android:layout_alignStart="@+id/button6" />
+
+    <Button
+        android:text="로 그 인"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:id="@+id/button"
+        android:textSize="40sp"
+        android:background="@drawable/button2"
+        android:textStyle="normal|bold"
+        android:onClick="onButton1Clicked"
+        android:layout_marginTop="186dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
